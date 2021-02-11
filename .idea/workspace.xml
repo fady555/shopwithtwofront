@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b32bc61e-51c3-49ea-b3e0-0ab45a694a33" name="Default Changelist" comment="" />
+    <list default="true" id="b32bc61e-51c3-49ea-b3e0-0ab45a694a33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/front1_route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front1_route/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +14,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -155,7 +162,9 @@
       <workItem from="1612644566952" duration="1156000" />
       <workItem from="1612835138998" duration="606000" />
       <workItem from="1612894164494" duration="4245000" />
-      <workItem from="1612977541593" duration="17726000" />
+      <workItem from="1612977541593" duration="17762000" />
+      <workItem from="1613009111390" duration="34000" />
+      <workItem from="1613013083427" duration="91000" />
     </task>
     <servers />
   </component>
@@ -171,10 +180,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1611929023168" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1612835204862">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1613009143590">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612835204862" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1613009143590" />
     <state x="518" y="287" key="NewPhpFileDialog" timestamp="1612987202989">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

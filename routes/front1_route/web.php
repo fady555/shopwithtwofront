@@ -31,7 +31,7 @@ Route::group(
 
         //return $_GET['price_filter'];
         //return $request->price_filter;
-        //return $request->input('price_filter');
+        return $request->input('price_filter');
 
 
     });
