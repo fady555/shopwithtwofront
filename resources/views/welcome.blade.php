@@ -85,15 +85,6 @@
                 </div>
 
 
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-                <input type="file" id="imgload" >
-
-                <img src="#" id="imgshow" align="left">        <input type="file" id="imgload" >
-
-                <img src="#" id="imgshow" align="left">
-
-
                 <script>
                     $('document').ready(function () {
                         $("#imgload").change(function () {

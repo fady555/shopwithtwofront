@@ -132,7 +132,7 @@
 
                                         @foreach(\App\Category::all() as $cat)
 
-                                            <li class="level-1">-{{$cat->name}}</li>
+                                            <li class="level-1"> -     {{$cat->name}}</li>
 
                                             @foreach(\App\Product::where('category_id','=',$cat->id)->get() as $CatPro)
                                             <li class="level-2">{{$CatPro->name}}</li>
@@ -197,19 +197,19 @@
                                 <a href="index.html" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
                             </li>
                             <li class="menu-item">
-                                <a href="about-us.html" class="link-term mercado-item-title">About Us</a>
+                                <a href="{{route('about_au')}}" class="link-term mercado-item-title">{{__('lang_front.about_us')}}</a>
                             </li>
                             <li class="menu-item">
-                                <a href="shop.html" class="link-term mercado-item-title">Shop</a>
+                                <a href="shop.html" class="link-term mercado-item-title">{{__('lang_front.shop')}}</a>
                             </li>
                             <li class="menu-item">
-                                <a href="cart.html" class="link-term mercado-item-title">Cart</a>
+                                <a href="cart.html" class="link-term mercado-item-title">{{__('lang_front.cart')}}</a>
                             </li>
                             <li class="menu-item">
-                                <a href="checkout.html" class="link-term mercado-item-title">Checkout</a>
+                                <a href="checkout.html" class="link-term mercado-item-title">{{__('lang_front.checkout')}}</a>
                             </li>
                             <li class="menu-item">
-                                <a href="contact-us.html" class="link-term mercado-item-title">Contact Us</a>
+                                <a href="{{route('contact_au')}}" class="link-term mercado-item-title">{{__('lang_front.contact_us')}}</a>
                             </li>
                         </ul>
                     </div>

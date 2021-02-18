@@ -1,7 +1,7 @@
 <?php
 return[
 
-    #
+    #header of site
     'about_us'=>'About_us',
     'cart'=>'Cart shopping',
     'checkout'=>'Checkout',
