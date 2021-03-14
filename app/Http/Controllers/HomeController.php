@@ -27,14 +27,14 @@ class HomeController extends Controller
 
         if (Auth::check()) {
             if (Auth::user()->role_id === 1 || Auth::user()->role_id === 2) {
-                return view('back.start_dash');
+                return  redirect('/dashboard');
             }
 
             if (Auth::user()->id == 3) {
-                return view('front.start');
+                return redirect('/home-product');
             }
         }
-        return view('front.start');
+         return redirect('/home-product');
 
     }
 }

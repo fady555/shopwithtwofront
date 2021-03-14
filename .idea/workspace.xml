@@ -20,11 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b32bc61e-51c3-49ea-b3e0-0ab45a694a33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/front/itm_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front_one/StartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front_one/StartController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_14_163627_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_163627_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_14_174247_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_174247_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_22_080049_create_itms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_22_080049_create_itms_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/start.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/start.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/back_route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/back_route/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/front1_route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front1_route/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +205,7 @@
       <workItem from="1613656044398" duration="415000" />
       <workItem from="1615413168305" duration="5320000" />
       <workItem from="1615669927856" duration="514000" />
-      <workItem from="1615690432541" duration="349000" />
+      <workItem from="1615690432541" duration="13948000" />
     </task>
     <servers />
   </component>
@@ -234,13 +236,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1611929023168" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1615693487587">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1615693487587" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1613087974917">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1613087974917" />
-    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1612987202989">
+    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1615710524780">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1615710524780" />
     <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612987202989" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611741855635">
       <screen x="0" y="0" width="1366" height="728" />
@@ -262,21 +269,6 @@
           <url>file://$PROJECT_DIR$/resources/views/layouts/front_app.blade.php</url>
           <line>219</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/front/start.blade.php</url>
-          <line>8</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/front/start.blade.php</url>
-          <line>91</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/front/start.blade.php</url>
-          <line>199</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

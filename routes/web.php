@@ -35,15 +35,6 @@ Route::group(
 
 
 
-Route::get('login-as-role',function (){
-
-    return \Illuminate\Support\Facades\Session::get('kind_role_message');
-});
-
-
-
-
-
 
 
 

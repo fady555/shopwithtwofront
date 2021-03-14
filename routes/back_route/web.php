@@ -9,13 +9,6 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
 
-/*
-Route::view('66','back.start');
-Route::view('1','auth.login');
-Route::view('2','register');
-*/
-
-//users
 
 Route::group(
     [
@@ -30,7 +23,7 @@ Route::group(
     function(){
 
         #user
-
+        Route::view('/dashboard','back.start_dash');
         Route::get('/show-user','UserController@index')->name('show_user')->middleware('both_admin');
         Route::get('/show-user-pag','UserController@idexpagiate')->name('show_user_pag')->middleware('both_admin');
         Route::get('/show-user-search','UserController@search')->name('show_user_search')->middleware('both_admin');
@@ -174,13 +167,7 @@ Route::group(
 
 
 
-Route::get('11',function (Request $req){
 
-if(file_exists("../storage/app/img_itm_Camera/BANWdcT5dWuNX8OgWmm5QR7vA07bMUSXvCLHgX4U.jpg")){return "exist";}
-
-
-
-});
 
 
 

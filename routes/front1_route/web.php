@@ -14,9 +14,13 @@ Route::group(
     ]
     ,function (){
 
-
+    #views
     Route::view('/about-au','front.about_us')->name('about_au');
     Route::view('/contact-au','front.contact_us')->name('contact_au');
+    #controllers
+    Route::get('/home-product','StartController@index')->name('start_home');
+
+
 
 
 
@@ -27,14 +31,6 @@ Route::group(
     Route::view('/try5','front.shop');
     Route::view('/try6','front.start');
 
-    Route::get('999',function (Request  $request){
-
-        //return $_GET['price_filter'];
-        //return $request->price_filter;
-        return $request->input('price_filter');
-
-
-    });
 
 });
 
