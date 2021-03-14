@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+use Illuminate\Support\Facades\DB;
+
 class CreateItmsTable extends Migration
 {
     /**
@@ -40,6 +42,13 @@ class CreateItmsTable extends Migration
 
             $table->timestamps();
         });
+
+        DB::table('itms')->insert([
+
+        ]);
+
+
+
     }
 
     /**

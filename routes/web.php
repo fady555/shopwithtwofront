@@ -19,10 +19,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-//Route::get('/home', 'HomeController@index')->name('home');
-
-
-
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
@@ -30,10 +26,7 @@ Route::group(
     ]
     ,function (){
 
-
     Route::get('/home', 'HomeController@index')->name('home');
-
-
 });
 
 
@@ -49,25 +42,10 @@ Route::get('login-as-role',function (){
 
 
 
-Route::get('flush',function (){
-    return \Illuminate\Support\Facades\Session::flush();
-});
-Route::get('55',function (){
-    return \Illuminate\Support\Facades\Auth::check();
-});
 
 
-Route::get('55',function (){
-    $stack = array("orange", "banana", "apple", "raspberry");
-
-  \
-
-    print_r($stack);
-});
 
 
-Route::get('666',function (){
-    //return app()->getLocale();
-    return Config::get('app.locale');
-});
+
+
 

@@ -24,8 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //return view('home');
-        //return Auth::user()->id;
 
         if (Auth::check()) {
             if (Auth::user()->role_id === 1 || Auth::user()->role_id === 2) {

@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('name_ar');
             $table->text('description');
 
 
@@ -25,12 +26,13 @@ class CreateCategoriesTable extends Migration
 
 
         DB::table('categories')->insert([
-            ['name'=>'clothes','description'=>'no description'],
-            ['name'=>'car','description'=>'no description'],
-            ['name'=>'electronics','description'=>'no description'],
-            ['name'=>'furniture','description'=>'no description'],
-            ['name'=>'cook tool','description'=>'no description'],
-            ['name'=>'chose','description'=>'no description'],
+            ['name'=>'Electronics','name_ar'=>'إلكترونيات','description'=>'no description'],
+            ['name'=>'Clothing, Shoes & Jewelry','name_ar'=>'ملابس واحذية ومجوهرات','description'=>'no description'],
+            ['name'=>'Baby','name_ar'=>'اطفال','description'=>'no description'],
+            ['name'=>'Computer','name_ar'=>'الخاسب الالى','description'=>'no description'],
+            ['name'=>'Clocks','name_ar'=>'ساعات','description'=>'no description'],
+
+
         ]);
     }
 
