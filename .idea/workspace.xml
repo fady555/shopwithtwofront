@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b32bc61e-51c3-49ea-b3e0-0ab45a694a33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/front/itm_details.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front_one/StartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front_one/StartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/start.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/start.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/back_route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/back_route/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front_one/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front_one/ShopController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/front1_route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front1_route/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -205,7 +203,11 @@
       <workItem from="1613656044398" duration="415000" />
       <workItem from="1615413168305" duration="5320000" />
       <workItem from="1615669927856" duration="514000" />
-      <workItem from="1615690432541" duration="13948000" />
+      <workItem from="1615690432541" duration="14395000" />
+      <workItem from="1615765213200" duration="16095000" />
+      <workItem from="1616014995303" duration="2320000" />
+      <workItem from="1616031749222" duration="20000" />
+      <workItem from="1616090436447" duration="6720000" />
     </task>
     <servers />
   </component>
@@ -269,6 +271,21 @@
           <url>file://$PROJECT_DIR$/resources/views/layouts/front_app.blade.php</url>
           <line>219</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/front/shop.blade.php</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/front/shop.blade.php</url>
+          <line>259</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/front/shop.blade.php</url>
+          <line>476</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

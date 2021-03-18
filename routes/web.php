@@ -31,6 +31,11 @@ Route::group(
 
 
 
+Route::get('ch',function (){
+    return \App\Category::with('category_has_many_product')->get() ;
+});
+
+
 
 
 

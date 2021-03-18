@@ -20,6 +20,8 @@ Route::group(
     #controllers
     Route::get('/home-product','StartController@index')->name('start_home');
 
+    Route::get('/shop','ShopController@index')->name('shop');
+
 
 
 

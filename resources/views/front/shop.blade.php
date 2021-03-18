@@ -6,14 +6,18 @@
 @section('boody_front')
 
 
+
+
     <main id="main" class="main-site left-sidebar">
 
         <div class="container">
 
             <div class="wrap-breadcrumb">
                 <ul>
-                    <li class="item-link"><a href="#" class="link">home</a></li>
-                    <li class="item-link"><span>Digital &amp; Electronics</span></li>
+
+                    <li class="item-link"><span> shop </span></li>
+                    <li class="item-link"><a href="#" class="link"><i onclick="document.forms[0].submit()" class="fa fa-refresh"> refresh filter</i></a></li>
+
                 </ul>
             </div>
             <div class="row">
@@ -40,7 +44,7 @@
                                     <option value="date">Sort by newness</option>
                                     <option value="price">Sort by price: low to high</option>
                                     <option value="price-desc">Sort by price: high to low</option>
-                                </select><div class="chosen-container chosen-container-single" style="width: 167px;" title=""><a class="chosen-single"><span>Default sorting</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                                </select><div class="chosen-container chosen-container-single" style="width: 174px;" title=""><a class="chosen-single"><span>Default sorting</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
                             </div>
 
                             <div class="sort-item product-per-page">
@@ -52,7 +56,7 @@
                                     <option value="24">24 per page</option>
                                     <option value="30">30 per page</option>
                                     <option value="32">32 per page</option>
-                                </select><div class="chosen-container chosen-container-single" style="width: 94px;" title=""><a class="chosen-single"><span>12 per page</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                                </select><div class="chosen-container chosen-container-single" style="width: 96px;" title=""><a class="chosen-single"><span>12 per page</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
                             </div>
 
                             <div class="change-display-mode">
@@ -69,10 +73,164 @@
                         <ul class="product-list grid-products equal-container">
 
                             <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
-                                <div class="product product-style-3 equal-elem " style="height: 388px;">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
                                     <div class="product-thumnail">
                                         <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-                                            <figure><img src="{{asset('assets/images/products/digital_20.jpg')}}" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                            <figure><img src="assets/images/products/digital_20.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_22.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_10.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_01.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_21.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_15.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_17.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_05.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_07.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_02.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_09.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
+                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
+                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                <div class="product product-style-3 equal-elem " style="height: 386px;">
+                                    <div class="product-thumnail">
+                                        <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
+                                            <figure><img src="assets/images/products/digital_06.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
                                         </a>
                                     </div>
                                     <div class="product-info">
@@ -98,81 +256,119 @@
                     </div>
                 </div><!--end main products area-->
 
+
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 sitebar">
+
+                    <form id="filter_form" method="get" action="{{route('shop')}}">
+
                     <div class="widget mercado-widget categories-widget">
                         <h2 class="widget-title">All Categories</h2>
                         <div class="widget-content">
                             <ul class="list-category">
 
-                                @foreach(\App\Category::with('products')->get() as $category)
-                                <li class="category-item has-child-cate">
-                                    <a href="#" class="cate-link">{{$category->name}}</a>
-                                    @empty(json_decode($category->products)) @else <span class="toggle-control"></span> @endempty
-
-                                    <ul class="sub-cate">
-
-                                        @empty(json_decode($category->products))
-                                            No products
-                                        @else
-
-                                            @for($i = 0 ;$i<count($category->products);$i++)
-                                                <li class="category-item"><a href="{{$category->products[$i]['id']}}" class="cate-link">{{$category->products[$i]['name']}} ({{count($category->products)}})</a></li>
-                                            @endfor
-
-                                        @endempty
+                                @foreach(\App\Category::with('category_has_many_product')->get() as $category)
 
 
+                                    @if(count($category->category_has_many_product) > 0 )
 
-                                    </ul>
-                                </li>
+                                        <li class="category-item has-child-cate">
+
+
+                                            <a href="javascript:;" >
+                                               <label @if(in_array($category->id,$category_arr)) style="color: green;" @endif  for="{{$category->id}}CAT">
+                                                   @if(app()->getLocale() === 'ar') {{$category->name_ar}} @else {{$category->name}} @endif
+                                               </label>
+                                            </a>
+                                            <!------------input checkbox to filter------------->
+                                            <input
+                                                type="checkbox"
+                                                id="{{$category->id}}CAT"
+                                                name="categories[]"
+                                                value="{{$category->id}}"
+                                                onchange="filter_form.submit()"
+                                                @if(in_array($category->id,$category_arr)) checked @endif
+                                                style="display: none;"
+                                            />
+
+
+
+                                            <span class="toggle-control">+</span>
+                                            <ul class="sub-cate">
+                                                @foreach(\App\Product::where('category_id',"=",$category->id)->get() as $product)
+                                                <li class="category-item">
+                                                        <a href="javascript:;"  class="cate-link">
+                                                            <label @if(in_array($product->id,$product_arr)) style="color: green;"   @endif  for="{{$product->id}}PROD">
+                                                            @if(app()->getLocale() === 'ar') {{$product->name_ar}} @else {{$product->name}} @endif . ({{\App\Itm::where('product_id',$product->id)->count()}})
+                                                            </label>
+                                                        </a>
+
+                                                        <!------------input checkbox to filter------------->
+                                                        <input
+                                                            type="checkbox"
+                                                            id="{{$product->id}}PROD"
+                                                            name="products[]"
+                                                            value="{{$product->id}}"
+                                                            onchange="filter_form.submit()"
+                                                            @if(in_array($product->id,$product_arr)) checked @endif
+                                                            style="display: none;"
+                                                        />
+                                                </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+
+                                    @else
+
+                                        <li class="category-item">
+                                            <a  href="javascript:;" onclick="filter_form.submit()" @if(in_array($category->id,$category_arr)) style="color: green;" @endif  class="cate-link">
+                                                <label for="{{$category->id}}CAT" >@if(app()->getLocale() === 'ar') {{$category->name_ar}} @else {{$category->name}} @endif </label>
+                                            </a>
+                                            <!------------input checkbox to filter------------->
+                                            <input
+                                                type="checkbox"
+                                                id="{{$category->id}}CAT"
+                                                name="categories[]"
+                                                value="{{$category->id}}"
+                                                onchange="filter_form.submit()"
+                                                @if(in_array($category->id,$category_arr)) checked @endif
+                                                style="display: none;"
+                                            />
+                                        </li>
+
+                                    @endif
+
                                 @endforeach
 
-                                <li class="category-item">
-                                    <a href="#" class="cate-link">Organics &amp; Spa</a>
-                                </li>
                             </ul>
                         </div>
                     </div><!-- Categories widget-->
 
+
                     <div class="widget mercado-widget filter-widget brand-widget">
-                        <h2 class="widget-title">Brand</h2>
+                        <h2 class="widget-title">products</h2>
                         <div class="widget-content">
                             <ul class="list-style vertical-list list-limited" data-show="6">
-                                @foreach(\App\Product::paginate(6) as $product)
-                                <li class="list-item"><a class="filter-link active" href="#">{{$product->name}}</a></li>
-                                <li class="list-item"><a class="filter-link " href="#">{{$product->name}}</a></li>
-                                @endforeach
 
-                                @foreach(\App\Product::paginate(6) as $product)
-                                <li class="list-item default-hiden"><a class="filter-link " href="#">{{$product->name}}</a></li>
-                                @endforeach
-
+                                <li class="list-item"><a class="filter-link active" href="#">Fashion Clothings</a></li>
+                                <li class="list-item"><a class="filter-link " href="#">Laptop Batteries</a></li>
+                                <li class="list-item default-hiden"><a class="filter-link " href="#">Printer &amp; Ink</a></li>
 
 
 
                                 <li class="list-item"><a data-label="Show less<i class=&quot;fa fa-angle-up&quot; aria-hidden=&quot;true&quot;></i>" class="btn-control control-show-more" href="#">Show more<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
-                    </div><!-- brand widget-->
+                    </div><!-- brand widget i modifiy to categoy-->
 
                     <div class="widget mercado-widget filter-widget price-filter">
                         <h2 class="widget-title">Price</h2>
                         <div class="widget-content">
                             <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"><div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 15%; width: 45%;"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 15%;"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 60%;"></span></div>
                             <p>
-
-
-                            <form method="get" action="{{url('999')}}">
-                                <script> document.getElementById('amount').value</script>
                                 <label for="amount">Price:</label>
-                                <input type="text"  name="price_filter" id="amount" readonly="">
+                                <input type="text" id="amount" readonly="">
                                 <button class="filter-submit">Filter</button>
-                            </form>
-
-
                             </p>
-
-
                         </div>
                     </div><!-- Price-->
 
@@ -269,6 +465,11 @@
                         </div>
                     </div><!-- brand widget-->
 
+
+                    </form>
+
+
+
                 </div><!--end sitebar-->
 
             </div><!--end row-->
@@ -276,6 +477,7 @@
         </div><!--end container-->
 
     </main>
+
 
 
 @endsection
