@@ -32,7 +32,17 @@ Route::group(
 
 
 Route::get('ch',function (){
-    return \App\Category::with('category_has_many_product')->get() ;
+    //return \App\Category::with('category_has_many_product')->get() ;
+   $x = '$75 - $300' ;
+   $pos_dash =  strpos($x,'-');
+
+
+      strpos($x,'-');
+      $min_price = substr($x,'1',$pos_dash-1);
+      $min_max   =  substr($x,$pos_dash+3);
+
+
+
 });
 
 

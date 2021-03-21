@@ -21,6 +21,7 @@ Route::group(
     Route::get('/home-product','StartController@index')->name('start_home');
 
     Route::get('/shop','ShopController@index')->name('shop');
+    Route::get('/part_shop','ShopController@part_index');
 
 
 

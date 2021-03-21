@@ -120,8 +120,8 @@
                 $( "#slider-range" ).slider({
                     range: true,
                     min: 0,
-                    max: 500,
-                    values: [ 75, 300 ],
+                    max: 20000,
+                    values: [ 1000, 3000 ],
                     slide: function( event, ui ) {
                         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
                     }
@@ -357,7 +357,7 @@
 	                    _this.addClass('active');
 	                    _this.parents().siblings('.tab-contents').find('.active').removeClass('active');
 	                    _this.parents().siblings('.tab-contents').find(_this.attr('href')).addClass('active');
-                    }  
+                    }
                 });
             }
 

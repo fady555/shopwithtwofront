@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b32bc61e-51c3-49ea-b3e0-0ab45a694a33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front_one/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front_one/ShopController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/front1_route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front1_route/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -207,7 +207,8 @@
       <workItem from="1615765213200" duration="16095000" />
       <workItem from="1616014995303" duration="2320000" />
       <workItem from="1616031749222" duration="20000" />
-      <workItem from="1616090436447" duration="6720000" />
+      <workItem from="1616090436447" duration="12660000" />
+      <workItem from="1616152202742" duration="18393000" />
     </task>
     <servers />
   </component>
@@ -246,19 +247,19 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1613087974917" />
-    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1615710524780">
+    <state x="518" y="287" key="NewPhpFileDialog" timestamp="1616282930870">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1615710524780" />
-    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1612987202989" />
+    <state x="518" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1616282930870" />
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611741855635">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1611741855635" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1613004429716">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1616180321873">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1613004429716" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1616180321873" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611658218992">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -279,13 +280,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/front/shop.blade.php</url>
-          <line>259</line>
-          <option name="timeStamp" value="4" />
+          <line>356</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/front/shop.blade.php</url>
-          <line>476</line>
-          <option name="timeStamp" value="6" />
+          <line>105</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
