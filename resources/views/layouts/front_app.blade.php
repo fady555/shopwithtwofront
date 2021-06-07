@@ -193,14 +193,25 @@
                 <div class="primary-nav-section">
                     <div class="container">
                         <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
+
                             <li class="menu-item home-icon">
-                                <a href="index.html" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                <a href="{{route('start_home')}}" class="link-term mercado-item-title "><i class="fa fa-home" aria-hidden=""></i></a>
+                                @if(((explode('/',request()->path()))[1]) == 'home-product')
+                                    <i class="btn btn-warning btn-block fa "></i>
+                                @endif
                             </li>
+
                             <li class="menu-item">
-                                <a href="{{route('about_au')}}" class="link-term mercado-item-title">{{__('lang_front.about_us')}}</a>
+
+                                <a href="{{route('about_us')}}" class="link-term mercado-item-title  ">{{__('lang_front.about_us')}}</a>
+                                @if(((explode('/',request()->path()))[1]) == 'about-us')
+                                    <i class="btn btn-warning btn-block fa "></i>
+                                @endif
                             </li>
+
                             <li class="menu-item">
                                 <a href="shop.html" class="link-term mercado-item-title">{{__('lang_front.shop')}}</a>
+
                             </li>
                             <li class="menu-item">
                                 <a href="cart.html" class="link-term mercado-item-title">{{__('lang_front.cart')}}</a>
@@ -209,7 +220,10 @@
                                 <a href="checkout.html" class="link-term mercado-item-title">{{__('lang_front.checkout')}}</a>
                             </li>
                             <li class="menu-item">
-                                <a href="{{route('contact_au')}}" class="link-term mercado-item-title">{{__('lang_front.contact_us')}}</a>
+                                <a href="{{route('contact_us')}}" class="link-term mercado-item-title">{{__('lang_front.contact_us')}}</a>
+                                @if(((explode('/',request()->path()))[1]) == 'contact-us')
+                                    <i class="btn btn-warning btn-block fa "></i>
+                                @endif
                             </li>
                         </ul>
                     </div>
@@ -496,6 +510,9 @@
 <script src="{{asset('assets/js/jquery.countdown.min.js')}}"></script>
 <script src="{{asset('assets/js/jquery.sticky.js')}}"></script>
 <script src="{{asset('assets/js/functions.js')}}"></script>
-</body>
+
+
+@yield('scripts')
+
 </body>
 </html>

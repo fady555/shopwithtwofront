@@ -77,17 +77,27 @@
                                 <div class="product product-style-3 equal-elem " style="height: 386px;">
                                     <div class="product-thumnail">
                                         <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-                                            <figure><img src="assets/images/products/digital_20.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                            <figure><img src="<?php echo str_replace('public','',url('/')).'storage/app/'.json_decode($itm->img)[0]?>" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
                                         </a>
                                     </div>
                                     <div class="product-info">
-                                        <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker [White]</span></a>
-                                        <div class="wrap-price"><span class="product-price">$250.00</span></div>
-                                        <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                        <a href="#" class="product-name"><span>{{$itm->name}} </span></a>
+                                        <div class="wrap-price"><span class="product-price">{{$itm->discount}}</span><del><p class="product-price">{{$itm->price}}</p></del> </div>
+                                        <div class="">
+                                            color
+                                            [
+
+
+                                            @foreach(json_decode($itm->color) as $col=>$hcol)
+                                                <button class="btn btn-sm" style="background-color: {{$hcol}};"></button>
+                                            @endforeach
+
+                                            ]
+                                        </div>
+                                        <a href="#" class="btn add-to-cart">{{__('lang_front.add_to_card')}} </a>
                                     </div>
                                 </div>
                             </li>
-
 
                         </ul>
                         @endforeach
@@ -95,13 +105,18 @@
 
                     <div class="wrap-pagination-info">
                         <ul class="page-numbers">
-                            <li><span class="page-number-item current">1</span></li>
-                            <li><a class="page-number-item" href="#">2</a></li>
-                            <li><a class="page-number-item" href="#">3</a></li>
-                            <li><a class="page-number-item next-link" href="#">Next</a></li>
+
+                            <li><a class="page-number-item next-link" href="{{$itms->previousPageUrl()}}">Previous</a></li>
+
+                            @for($pag = 0 ; $pag < $itms->total() ; $pag++)
+
+                            <li><a class="page-number-item  @if( isset($_GET['page']) && $_GET['page'] == $pag+1) current @endif" href="?page={{$pag+1}}">{{$pag+1}}</a></li>
+                            @endfor
+
+
+                            <li><a class="page-number-item next-link" href="{{$itms->nextPageUrl()}}">Next</a></li>
                         </ul>
-                        <p class="result-count">Showing 1-8 of 12 result</p>
-                        <p class="result-count">{{$itms->links()}}</p>
+                        <p class="result-count">Showing 1-{{count($itms)}} of {{count($itms)*$itms->total()}} result</p>
                     </div>
                 </div><!--end main products area-->
 

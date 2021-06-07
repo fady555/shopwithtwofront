@@ -23,7 +23,6 @@
                                         <h2 class="f-title">Extra 25% Off</h2>
                                         <span class="f-subtitle">On online payments</span>
                                         <p class="discount-code">Use Code: #FA6868</p>
-                                        <h4 class="s-title">Get Free</h4>
                                         <p class="s-subtitle">TRansparent Bra Straps</p>
                                     </div>
                                 </div></div><div class="owl-item cloned" style="width: 1170px;"><div class="item-slide">
@@ -256,6 +255,7 @@
                             <a href="#fashion_{{$product->id}}" class="tab-control-item">{{$product->name}}</a>
                             @endforeach
                         </div>
+
                         <div class="tab-contents " id="to_active">
                             @foreach(\App\Product::paginate(10) as $product)
                             <div class="tab-content-item" id="fashion_{{$product->id}}" style="height: 343px;">

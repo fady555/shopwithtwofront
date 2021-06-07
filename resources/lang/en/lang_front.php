@@ -9,6 +9,7 @@ return[
     'shop'=>'Shop',
     'home'=>'Home',
     'thank'=>'Thank you for shopping',
+    'add_to_card'=>'Add To Card',
 
 
 

@@ -31,19 +31,23 @@ Route::group(
 
 
 
-Route::get('ch',function (){
-    //return \App\Category::with('category_has_many_product')->get() ;
-   $x = '$75 - $300' ;
-   $pos_dash =  strpos($x,'-');
+Route::get('ch',function ($id= 50){
+
+//return url('sql_file/world.sql');
+//return \Illuminate\Support\Facades\Session::all();
+
+//print_r($_GET);
+
+dd(request()->path());
+//dd(\Illuminate\Support\Facades\Request::path());
+//dd(url()->previous());
+//dd(URL::previous());
+//dd(URL::current());
 
 
-      strpos($x,'-');
-      $min_price = substr($x,'1',$pos_dash-1);
-      $min_max   =  substr($x,$pos_dash+3);
 
 
-
-});
+})->name('p');
 
 
 

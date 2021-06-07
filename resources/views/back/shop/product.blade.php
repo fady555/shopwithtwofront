@@ -28,7 +28,7 @@
                             <!-- Add the bg color to the header using any of the bg-* classes -->
                             <div class="widget-user-header bg-warning">
                                 <div class="widget-user-image">
-                                    <img class="img-circle elevation-2" src="<?php echo str_replace('public','',url('/'))."storage/app/".json_decode($product->img)[0]; ?>" alt="">
+                                    <img class="img-circle elevation-2" src="<?php //echo str_replace('public','',url('/'))."storage/app/".json_decode($product->img)[0]; ?>" alt="">
                                 </div>
                                 <!-- /.widget-user-image -->
                                 <h3 class="widget-user-username"> {{$product->name}}</h3>

@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('name_ar');
             $table->longText('description');
-            $table->json('img')->nullable();
+            $table->string('img')->nullable()->default();
 
 
             $table->bigInteger('category_id')->unsigned();

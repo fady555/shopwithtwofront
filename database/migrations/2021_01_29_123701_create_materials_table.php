@@ -29,6 +29,7 @@ class CreateMaterialsTable extends Migration
             ['mater_name'=>'glass'],
             ['mater_name'=>'Ston'],
         ]);
+        //DB::unprepared(file_get_contents(url('the-end-shop/public/sql_file/world.sql')));
 
     }
 
