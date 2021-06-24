@@ -90,6 +90,8 @@ Route::group(
     /*********************************/
 
 
+
+
 });
 
 
@@ -157,6 +159,8 @@ Route::group(
     Route::get('/add-material','MaterialController@insert')->name('insert_material');
     Route::get('/insert-edit-material','MaterialController@inser_edit')->name('insert_edit_material');
     Route::get('/delete-material/{id?}','MaterialController@delete')->name('delete_material');
+
+
 
 });
 

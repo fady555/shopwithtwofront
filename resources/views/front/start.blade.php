@@ -23,6 +23,7 @@
                                         <h2 class="f-title">Extra 25% Off</h2>
                                         <span class="f-subtitle">On online payments</span>
                                         <p class="discount-code">Use Code: #FA6868</p>
+                                        <h4 class="s-title">Get Free</h4>
                                         <p class="s-subtitle">TRansparent Bra Straps</p>
                                     </div>
                                 </div></div><div class="owl-item cloned" style="width: 1170px;"><div class="item-slide">
@@ -77,7 +78,6 @@
                                     </div>
                                 </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button><button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button></div><div class="owl-dots disabled"></div></div>
             </div>
-
             <!--BANNER-->
             <div class="wrap-banner style-twin-default">
                 <div class="banner-item">

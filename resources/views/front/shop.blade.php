@@ -1,10 +1,43 @@
+<?php
+echo "the respose array ";
+
+    echo "<pre>";
+    echo "category_arr";
+print_r($category_arr);
+    echo "product_arr";
+print_r($product_arr);
+    echo "arr_status";
+print_r($arr_status);
+//print_r($min_price);
+//print_r($max_price);
+    echo "arr_mater";
+print_r($arr_mater);
+    echo "arr_size";
+print_r($arr_size);
+    echo "arr_size";
+//print_r($itms_popular);
+
+    echo "</pre>";
+
+;?>
+
+<?php
+echo "the request array";
+
+    echo "<pre>";
+print_r($_GET);
+    echo "</pre>";
+
+?>
+
+
 @extends('layouts.front_app')
+
 
 
 @section('title_front')      {{__('lang_front.shop')}}        @endsection
 
 @section('boody_front')
-
 
 
 
@@ -33,32 +66,12 @@
 
                     <div class="wrap-shop-control">
 
-                        <h1 class="shop-title">Digital &amp; Electronics</h1>
+                        <h1 class="shop-title">{{__('lang_front.filter')}}</h1>
 
                         <div class="wrap-right">
 
-                            <div class="sort-item orderby ">
-                                <select name="orderby" class="use-chosen" style="display: none;">
-                                    <option value="menu_order" selected="selected">Default sorting</option>
-                                    <option value="popularity">Sort by popularity</option>
-                                    <option value="rating">Sort by average rating</option>
-                                    <option value="date">Sort by newness</option>
-                                    <option value="price">Sort by price: low to high</option>
-                                    <option value="price-desc">Sort by price: high to low</option>
-                                </select><div class="chosen-container chosen-container-single" style="width: 174px;" title=""><a class="chosen-single"><span>Default sorting</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
-                            </div>
 
-                            <div class="sort-item product-per-page">
-                                <select name="post-per-page" class="use-chosen" style="display: none;">
-                                    <option value="12" selected="selected">12 per page</option>
-                                    <option value="16">16 per page</option>
-                                    <option value="18">18 per page</option>
-                                    <option value="21">21 per page</option>
-                                    <option value="24">24 per page</option>
-                                    <option value="30">30 per page</option>
-                                    <option value="32">32 per page</option>
-                                </select><div class="chosen-container chosen-container-single" style="width: 96px;" title=""><a class="chosen-single"><span>12 per page</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
-                            </div>
+
 
                             <div class="change-display-mode">
                                 <a href="#" class="grid-mode display-mode active"><i class="fa fa-th"></i>Grid</a>
@@ -297,64 +310,39 @@
 
 
                     <div class="widget mercado-widget widget-product">
-                        <h2 class="widget-title">Popular Products</h2>
+                        <h2 class="widget-title">{{__('lang_front.pop_product')}}</h2>
                         <div class="widget-content">
                             <ul class="products">
-                                <li class="product-item">
-                                    <div class="product product-widget-style">
-                                        <div class="thumbnnail">
-                                            <a href="detail.html" title="Radiant-360 R6 Wireless Omnidirectional Speaker [White]">
-                                                <figure><img src="{{asset('assets/images/products/digital_01.jpg')}}" alt=""></figure>
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-                                            <div class="wrap-price"><span class="product-price">$168.00</span></div>
-                                        </div>
-                                    </div>
-                                </li>
 
-                                <li class="product-item">
-                                    <div class="product product-widget-style">
-                                        <div class="thumbnnail">
-                                            <a href="detail.html" title="Radiant-360 R6 Wireless Omnidirectional Speaker [White]">
-                                                <figure><img src="{{asset('assets/images/products/digital_17.jpg')}}" alt=""></figure>
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-                                            <div class="wrap-price"><span class="product-price">$168.00</span></div>
-                                        </div>
-                                    </div>
-                                </li>
 
-                                <li class="product-item">
-                                    <div class="product product-widget-style">
-                                        <div class="thumbnnail">
-                                            <a href="detail.html" title="Radiant-360 R6 Wireless Omnidirectional Speaker [White]">
-                                                <figure><img src="{{asset('assets/images/products/digital_18.jpg')}}" alt=""></figure>
-                                            </a>
-                                        </div>
-                                        <div class="product-info">
-                                            <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-                                            <div class="wrap-price"><span class="product-price">$168.00</span></div>
-                                        </div>
-                                    </div>
-                                </li>
+                                @foreach(\App\Itm::Where('number_of_buy','>',10)->take(5)->orderBy('number_of_buy', 'DESC')->get() as $itm_pop)
 
-                                <li class="product-item">
-                                    <div class="product product-widget-style">
-                                        <div class="thumbnnail">
-                                            <a href="detail.html" title="Radiant-360 R6 Wireless Omnidirectional Speaker [White]">
-                                                <figure><img src="{{asset('assets/images/products/digital_20.jpg')}}" alt=""></figure>
-                                            </a>
+                                    <li class="product-item">
+                                        <div class="product product-widget-style">
+                                            <div class="thumbnnail">
+                                                <a href="detail.html" title="{{$itm_pop->description}}">
+                                                    <figure><img src="<?php echo str_replace('public','',url('/')).'storage/app/'.json_decode($itm_pop->img)[0]?>" alt=""></figure>
+                                                </a>
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="#" class="product-name"><span>[ {{$itm_pop->name}} ]{{$itm_pop->description}}</span></a>
+                                                <div class="wrap-price"><span class="product-price">{{$itm_pop->discount}}</span></div>
+                                                color
+                                                [
+
+
+                                                @foreach(json_decode($itm_pop->color) as $col=>$hcol)
+                                                    <button class="btn btn-sm" style="background-color: {{$hcol}};"></button>
+                                                @endforeach
+
+                                                ]
+                                            </div>
                                         </div>
-                                        <div class="product-info">
-                                            <a href="#" class="product-name"><span>Radiant-360 R6 Wireless Omnidirectional Speaker...</span></a>
-                                            <div class="wrap-price"><span class="product-price">$168.00</span></div>
-                                        </div>
-                                    </div>
-                                </li>
+                                    </li>
+
+                                @endforeach
+
+
 
                             </ul>
                         </div>

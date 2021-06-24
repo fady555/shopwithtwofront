@@ -1,9 +1,5 @@
 @extends('layouts.back_app')
 
-
-
-
-
 @section('back_content')
 
 

@@ -28,22 +28,29 @@
                 @endfor
             </button>
 {{--------------------------------------------------------------------------------------------------------------}}
-        <form method="get" action="{{route('show_itms')}}">
-            <label for="exampleInputName">Show By Prducts</label>
-            <div class="form-group">
+        <form method="get" action="{{route('show_itms')}}" id="form_filter">
+            <label for="exampleInputName">Show By Prducts <i class="fas fa-filter" onclick="document.getElementById('form_filter').classList.toggle('d-none')">filter</i>
+            </label>
+                <div class="row">
                 @foreach(\App\Product::all() as $product)
-                    <div class="form-check form-check-inline">
-                        <input  @if(in_array($product->id,$productSelect)) checked @endif class="form-check-input" onchange="submit();" type="checkbox" name="products[]"  id="inlineCheckbox{{$product->id}}" value="{{$product->id}}">
-                        <label class="form-check-label" for="inlineCheckbox{{$product->id}}">{{$product->name}}</label>
-                    </div>
+
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox">
+                                    <input  @if(in_array($product->id,$productSelect)) checked @endif class="custom-control-input" onchange="submit();" type="checkbox" name="products[]"  id="inlineCheckbox{{$product->id}}" value="{{$product->id}}">
+                                    <label class="custom-control-label" for="inlineCheckbox{{$product->id}}">{{$product->name}}</label>
+                                </div>
+                            </div>
+                        </div>
+
                 @endforeach
-            </div>
+                </div>
         </form>
 {{--------------------------------------------------------------------------------------------------------------}}
 
             <div class="card-tools">
                 <a href="#" class="btn btn-tool btn-sm">
-                    <i class="fas fa-download"></i>
+                    <i class="fas fa-filter" onclick="document.getElementById('form_filter').classList.toggle('d-none')">filter</i>
                 </a>
                 <a href="#" class="btn btn-tool btn-sm">
                     <i class="fas fa-bars"></i>

@@ -45,8 +45,8 @@
                         <ul>
 
                             @guest()
-                            <li class="menu-item" ><a title="Register or Login" href="{{route('login')}}">Login</a></li>
-                            <li class="menu-item" ><a title="Register or Login" href="{{route('register')}}">Register</a></li>
+                                <li class="menu-item" ><a title="Register or Login" href="{{route('login')}}">Login</a></li>
+                                <li class="menu-item" ><a title="Register or Login" href="{{route('register')}}">Register</a></li>
                             @endguest
 
                             @auth()
@@ -59,7 +59,7 @@
                                         @csrf
                                     </form>
                                 </li>
-                           @endauth
+                            @endauth
 
 
 
@@ -135,7 +135,7 @@
                                             <li class="level-1"> -     {{$cat->name}}</li>
 
                                             @foreach(\App\Product::where('category_id','=',$cat->id)->get() as $CatPro)
-                                            <li class="level-2">{{$CatPro->name}}</li>
+                                                <li class="level-2">{{$CatPro->name}}</li>
                                             @endforeach
 
                                         @endforeach

@@ -13,16 +13,7 @@ class ShopController extends Controller
 {
     public function index(Request $request){
 
-
-        $itms = Itm::paginate(2);
-
-        //echo "<pre>";
-       //print_r($itms);
-       //echo var_dump($itms->links());
-        //echo $itms->total();
-        //echo "</pre>";
-
-
+        $itms = Itm::paginate(10);
 
         if(empty($request->all())){
             return view('front.shop')->with(
@@ -30,8 +21,8 @@ class ShopController extends Controller
                     'category_arr'=>[],
                     'product_arr'=>[],
                     'arr_status'=>[],
-                    'min_price' =>2000,
-                    'max_price' =>5000,
+                    'min_price' =>0,
+                    'max_price' =>1000000,
                     'arr_mater' =>[],
                     'arr_size' =>[],
 
@@ -42,16 +33,16 @@ class ShopController extends Controller
 
              if(empty($request->categories)){$category_arr = [];}else{$category_arr=$request->categories;}
              if(empty($request->products)){$product_arr = [];}else{$product_arr=$request->products;}
-             if(empty($request->status)){$arr_status = [];}else{$arr_status=$request->status;}
-             if(empty($request->materils)){$arr_mater = [];}else{$arr_mater=$request->materils;}
-             if(empty($request->sizes)){$arr_size = [];}else{$arr_size = $request->sizes;}
+             if(empty($request->status)){$arr_status = [];}else{$arr_status=$request->status; foreach ($arr_status AS $index => $value){$arr_status[$index] = (int)$value;}}
+             if(empty($request->materils)){$arr_mater = [];}else{$arr_mater=$request->materils;foreach ($arr_mater AS $index => $value){$arr_mater[$index] = (int)$value;}}
+             if(empty($request->sizes)){$arr_size = [];}else{$arr_size = $request->sizes;foreach ($arr_size AS $index => $value){$arr_size[$index] = (int)$value;}}
+
+             if(empty($request->min_price)){$min_price = 0;}else{$min_price = $request->min_price;}
+             if(empty($request->max_price)){$max_price = 100000000;}else{$max_price = $request->max_price;}
 
 
 
              #QUERY OF SELECT
-
-            //$itms = Itm::whereIn('product_id',$product_arr=$request->products)->get();
-
             $products_by_category = DB::table('products')->whereIn('category_id',$category_arr)->get('id');
 
             $products_by_category = json_decode(json_encode($products_by_category)); //it will return you stdclass object
@@ -63,48 +54,35 @@ class ShopController extends Controller
                  array_push($products_by_category_array_indexed,$products_by_category[$pb]['id']);
              }
 
+            $array_end_products_merge = array_merge($products_by_category_array_indexed,$arr_status);
 
 
-             // $products_by_category_array_indexed ;
+                    if(empty($array_end_products_merge)):
+                        $itms_first_query = DB::table('itms')
+                            ->WhereJsonContains('status',$arr_status)
+                            ->WhereJsonContains('made_material',$arr_mater)
+                            ->WhereJsonContains('size',$arr_size)
+                            ->where('discount','>',$min_price)//min_value
+                            ->where('discount','<=',$max_price);//max_value
+                        $itms = $itms_first_query->whereJsonContains('status',$arr_status)->paginate(10);
 
 
-
-
-/*->where(function($query) use($arr_status) {
-                    for($m = 0 ; $m < count($arr_status) ; $m++) {
-                        $query->orWhereJsonContains('status', $arr_status[$m]);
-                    }
-                })*/
-
-
-
-
-            $itms = DB::table('itms')
-                ->whereIn('product_id',$product_arr)
-                ->orWhereIn('product_id',$products_by_category_array_indexed )
-                ->paginate(2);
-
+                        else:
+                            $itms_first_query = DB::table('itms')
+                                ->WhereJsonContains('status',$arr_status)
+                                ->WhereJsonContains('made_material',$arr_mater)
+                                ->WhereJsonContains('size',$arr_size)
+                                ->where('discount','>',$min_price)//min_value
+                                ->where('discount','<=',$max_price)//max_value
+                                ->whereIn('product_id',$array_end_products_merge);
+                          $itms = $itms_first_query->whereJsonContains('status',$arr_status)->paginate(10);
+                    endif;
 
 
 
 
 
              #END OF QUERY SELECT
-
-
-            //print_r($product_arr);
-            //print_r($products_by_category_array_indexed);
-            print_r($arr_status);
-
-           //return $itms;
-
-
-
-
-
-
-
-
 
 
 
@@ -122,15 +100,13 @@ class ShopController extends Controller
 
 
 
-
-
-
-
-
         }
 
 
     }
+
+
+
 
 
 }

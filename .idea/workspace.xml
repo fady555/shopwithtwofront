@@ -20,25 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b32bc61e-51c3-49ea-b3e0-0ab45a694a33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SlidController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Slid.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_26_222130_create_slids_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/sql_file/world.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/front/shop2.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front_one/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front_one/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_14_174247_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_14_174247_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_22_080049_create_itms_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_22_080049_create_itms_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_29_123701_create_materials_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_29_123701_create_materials_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SlidController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Admin_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Both_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Both_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_26_222130_create_slids_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/lang_front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/lang_front.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/shop/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/shop/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/shop/itms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/shop/itms.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/start_dash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/start_dash.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front/start.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/start.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/back_app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/back_app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/front1_route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front1_route/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/back_route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/back_route/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -237,6 +233,17 @@
       <workItem from="1622494604773" duration="25173000" />
       <workItem from="1622533127633" duration="53000" />
       <workItem from="1623071362339" duration="288000" />
+      <workItem from="1623159939591" duration="24000" />
+      <workItem from="1623160625735" duration="128000" />
+      <workItem from="1623160972761" duration="14000" />
+      <workItem from="1623161036430" duration="97000" />
+      <workItem from="1623161871814" duration="17913000" />
+      <workItem from="1623269165571" duration="1925000" />
+      <workItem from="1623608599647" duration="12179000" />
+      <workItem from="1623627788895" duration="33000" />
+      <workItem from="1624058012186" duration="3792000" />
+      <workItem from="1624479010427" duration="3879000" />
+      <workItem from="1624531425691" duration="1849000" />
     </task>
     <servers />
   </component>
@@ -261,11 +268,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/layouts/front_app.blade.php</url>
-          <line>233</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/front/start.blade.php</url>
           <line>8</line>

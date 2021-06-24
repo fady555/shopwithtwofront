@@ -17,7 +17,8 @@ class Admin
     public function handle($request, Closure $next)
     {
         $role = Auth::user()->role_id;
-        if($role === 1  && Auth::check() ){return $next($request);}
-        //abort(403);
+        if($role === 1  && Auth::check() ){return $next($request);}{
         return redirect('/login-as-role')->with('kind_role_message','the admin only can do it ');    }
+    }
+        //abort(403);
 }

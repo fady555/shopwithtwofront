@@ -10,6 +10,8 @@ return[
     'home'=>'Home',
     'thank'=>'Thank you for shopping',
     'add_to_card'=>'Add To Card',
+    'filter'=>'Filter',
+    'pop_product'=>'Popular Products',
 
 
 

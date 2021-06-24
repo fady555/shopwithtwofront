@@ -16,9 +16,10 @@ class Both_admin
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::user()->role_id < 3){return $next($request);}
+        if(Auth::user()->role_id < 3){return $next($request);}else{
+            return redirect('/login-as-role')->with('kind_role_message',' admin or admin_helper can do it only ');
+        }
 
-        return redirect('/login-as-role')->with('kind_role_message',' admin or admin_helper can do it only ');
 
     }
 }
