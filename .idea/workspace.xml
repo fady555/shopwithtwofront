@@ -21,21 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b32bc61e-51c3-49ea-b3e0-0ab45a694a33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front_one/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front_one/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SlidController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Admin_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Both_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Both_admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_26_222130_create_slids_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/lang_front.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/lang_front.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/shop/itms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/shop/itms.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/start_dash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/start_dash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/shop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/shop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/start.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/start.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/back_app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/back_app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front_app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front_app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/back_route/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/back_route/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,6 +229,7 @@
       <workItem from="1624058012186" duration="3792000" />
       <workItem from="1624479010427" duration="3879000" />
       <workItem from="1624531425691" duration="1849000" />
+      <workItem from="1624535201486" duration="1529000" />
     </task>
     <servers />
   </component>
